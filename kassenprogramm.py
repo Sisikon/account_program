@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
+
 # Account Program
 # Version 0.1
 # by R. Zwyer
+
+# used
+"""
+  * variable
+  * calculation
+  * input
+  * float
+  * round
+  * if, else
+  * print
+"""
 
 # variable transformation from german to english
 # ****************
@@ -38,11 +50,14 @@ while continue_program == "n":
     
 #   Change money & and round it to 2 points after comma
     change = round(payment - product_prize_discount,2)
-    print("Paid in $:", payment, "Product prize with discount in $:", product_prize_discount)
-    print("Change money in $:", change)
+    if change <0:
+        print("The payed money is not enough")
+    else:
+        print("Paid in $:", payment, "Product prize with discount in $:", product_prize_discount)
+        print("Change money in $:", change)
     
 #   Ask to restart program
-    continue_program = input("Is your working time over 'n' ?")
+    continue_program = input("Is your work time over 'n' ?")
     
 #   End the program
-print("Thank you for your effort and enjoy your after work time")
+print("Thank you for your effort and enjoy your life")
